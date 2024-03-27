@@ -1,9 +1,11 @@
 import pygame
 import random
 import time
+import os
 from map.create_map import game_board
 
-img = pygame.image.load(r"C:\Users\User\OneDrive\Desktop\Pacman\cherry\cherry.png")
+img_path = os.path.join(os.getcwd(), "cherry\cherry.png")
+img = pygame.image.load(img_path)
 
 class Cherry():
 

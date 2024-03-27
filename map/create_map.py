@@ -1,11 +1,14 @@
 import pygame
+import os
 
 size = 24
 walls = []
 coins = []
 game_board = []
 
-map_file = r"C:\Users\User\OneDrive\Desktop\Pacman\map\map.txt"
+map_path = os.path.join(os.getcwd(), "map\map.txt")
+map_file = map_path
+
 with open(map_file) as f:
     for y, row in enumerate(f):
         y *= size
